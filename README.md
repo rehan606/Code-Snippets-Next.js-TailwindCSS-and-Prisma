@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Code Snippet Manager 🚀
 
-## Getting Started
+A modern **Code Snippet Management Application** built with **Next.js**, **Tailwind CSS**, **Prisma**, and **shadcn/ui**.  
+This app helps developers save, organize, and reuse code snippets efficiently.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔐 Authentication (optional / planned)
+- 📂 Create, edit, delete code snippets
+- 🏷️ Tag snippets by language or category
+- 🔍 Search & filter snippets
+- 🎨 Clean UI with shadcn/ui components
+- 🌙 Dark / Light mode support
+- ⚡ Fast & responsive design
+- 🗄️ Database powered by Prisma
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Database ORM:** Prisma
+- **Database:** PostgreSQL / MySQL / SQLite
+- **Language:** TypeScript
+- **Icons:** Lucide Icons
+
+---
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+.
+├── app/                # App Router pages
+├── components/         # Reusable UI components
+├── lib/                # Utility functions
+├── prisma/             # Prisma schema & migrations
+├── public/             # Static assets
+├── styles/             # Global styles
+└── README.md
+
+🚀 Getting Started
+1️⃣ Clone the repository
+
+```
+git clone https://github.com/your-username/code-snippet-manager.git
+cd code-snippet-manager
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2️⃣ Install dependencies
+```
+npm install
+# or
+yarn install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+3️⃣ Setup Environment Variables
 
-## Learn More
+Create a .env file in the root directory:
 
-To learn more about Next.js, take a look at the following resources:
+```
+DATABASE_URL="your_database_url"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4️⃣ Prisma Setup
+```
+npx prisma generate
+npx prisma migrate dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5️⃣ Run the development server
+```
+npm run dev
+```
 
-## Deploy on Vercel
+Open 👉 http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧩 Prisma Example Schema
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+model Snippet {
+  id        String   @id @default(uuid())
+  title     String
+  code      String
+  language  String
+  createdAt DateTime @default(now())
+}
+```
+
+📸 Screenshots
+
+Add screenshots of your UI here
+
+
+🗺️ Roadmap
+
+✅ CRUD for snippets
+
+🔐 User authentication
+
+⭐ Favorite snippets
+
+📤 Export snippets
+
+📊 Snippet analytics
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to open issues or submit pull requests.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+👤 Author
+
+Rehan
+Front-End Web Developer
+
+GitHub: [your-github-link]
+
+LinkedIn: [your-linkedin-link]
+
+⭐ If you like this project, don’t forget to give it a star!
+
+```
+---
+
+If you want, I can also:
+- Customize this README for **GitHub portfolio**
+- Make it **shorter or more beginner-friendly**
+- Add **deployment (Vercel) section**
+- Write a **Prisma + Next.js setup guide**
+
+Just tell me 👍
+
+```
