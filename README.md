@@ -42,10 +42,13 @@ This app helps developers save, organize, and reuse code snippets efficiently.
 ├── styles/             # Global styles
 └── README.md
 
+```
+
 🚀 Getting Started
 1️⃣ Clone the repository
 
-```
+```bash
+
 git clone https://github.com/your-username/code-snippet-manager.git
 cd code-snippet-manager
 
@@ -53,7 +56,7 @@ cd code-snippet-manager
 
 
 2️⃣ Install dependencies
-```
+```bash
 npm install
 # or
 yarn install
@@ -61,7 +64,7 @@ yarn install
 ```
 
 3️⃣ Setup Environment Variables
-```
+```bash
 Create a .env file in the root directory:
 
 
@@ -70,7 +73,7 @@ DATABASE_URL="your_database_url"
 
 4️⃣ Prisma Setup
 
-```
+```bash
 npx prisma generate
 npx prisma migrate dev
 
@@ -78,7 +81,7 @@ npx prisma migrate dev
 
 5️⃣ Run the development server
 
-```
+```bash
 npm run dev
 
 ```
@@ -87,7 +90,7 @@ Open 👉 http://localhost:3000
 
 🧩 Prisma Example Schema
 
-```
+```bash
 
 model Snippet {
   id        String   @id @default(uuid())
@@ -136,7 +139,7 @@ LinkedIn: [your-linkedin-link]
 
 ⭐ If you like this project, don’t forget to give it a star!
 
-```
+```bash
 
 If you want, I can also:
 - Customize this README for **GitHub portfolio**
