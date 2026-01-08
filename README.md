@@ -128,14 +128,17 @@ Feel free to open issues or submit pull requests.
 
 This project is licensed under the MIT License.
 
+
 👤 Author
 
 Rehan
 Front-End Web Developer
 
-GitHub: [your-github-link]
+GitHub: [https://github.com/rehan606]
 
-LinkedIn: [your-linkedin-link]
+LinkedIn: [https://www.linkedin.com/in/kh-rehan207/]
+
+
 
 ⭐ If you like this project, don’t forget to give it a star!
 
