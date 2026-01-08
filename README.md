@@ -59,23 +59,28 @@ npm install
 yarn install
 
 ```
-3️⃣ Setup Environment Variables
 
+3️⃣ Setup Environment Variables
+```
 Create a .env file in the root directory:
 
-```
+
 DATABASE_URL="your_database_url"
 ```
 
 4️⃣ Prisma Setup
+
 ```
 npx prisma generate
 npx prisma migrate dev
+
 ```
 
 5️⃣ Run the development server
+
 ```
 npm run dev
+
 ```
 
 Open 👉 http://localhost:3000
@@ -83,6 +88,7 @@ Open 👉 http://localhost:3000
 🧩 Prisma Example Schema
 
 ```
+
 model Snippet {
   id        String   @id @default(uuid())
   title     String
@@ -90,6 +96,7 @@ model Snippet {
   language  String
   createdAt DateTime @default(now())
 }
+
 ```
 
 📸 Screenshots
@@ -130,7 +137,6 @@ LinkedIn: [your-linkedin-link]
 ⭐ If you like this project, don’t forget to give it a star!
 
 ```
----
 
 If you want, I can also:
 - Customize this README for **GitHub portfolio**
